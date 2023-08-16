@@ -5,3 +5,10 @@ Damos o comando no prompt
     npx create-react-app portfolio (esse comando se não usase o type)
 
     ***portdolio === nome da pasta que será criada.
+
+
+Configurar ferramentas
+
+Editor config no caso tsconfig.json
+
+criamos um arquivo >>>  .editorconfig
