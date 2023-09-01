@@ -44,6 +44,12 @@ Irá aparecer um aquivo que precisa ser configurado, para ele funcionar com reac
     vamos alterar em:
 
     ,
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
     "plugins": [
         "react",
         "@typescript-eslint",
@@ -73,8 +79,47 @@ Vamos instalar o Prettier
 
 O Prettier é uma ferramenta de formatação de código que tem como objetivo principal padronizar automaticamente o estilo de código em projetos. Ao contrário de outras ferramentas de formatação ou linters que permitem personalizações extensas, o Prettier adota uma abordagem "opinião sobre formatação" muito rigorosa. Ele não apenas ajusta a indentação e a quebra de linhas, mas também reescreve o código por completo para seguir um conjunto específico de regras de formatação.
 
+Para instalar 
 
+    npn install --save-dev eslint-plugin-react-hooks
 
+    npn install --save-dev eslint-plugin-prettier eslint-config-hooks
 
+Criamos um novo arquivo
+
+    .prettier
+
+    configuramos 
+
+    {
+        "trailingComma": "nome",
+        "semi": false,
+        "singleQuote": true
+    }
+
+Criamos uma Pasta .vscode com um arquivo dentro chamado settings.json
+
+    configuração do settings.json
+
+    {
+        "editor.formatOnSace": false,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true 
+        }
+    }
+
+Damos o comando no terminal 
+
+    npx eslint .
+
+    npx prettier --write .\src\
+
+Inicializamos o nosso projeto
+
+    npm run start
+
+No google instalar a extensão 
+
+    React developers tools
 
 
